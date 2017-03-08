@@ -1,0 +1,40 @@
+#############################################
+# Syntax Coloring Map For arduionoCANBUS
+#############################################
+
+#############################################
+# Constants (LITERAL1)
+#############################################
+arduinoCAN	KEYWORD1
+
+#############################################
+# Methods and Functions (KEYWORD2)
+#############################################
+messageCAN	KEYWORD2
+messageTx	KEYWORD2
+messageRx	KEYWORD2
+begin	KEYWORD2
+messageAvailable	KEYWORD2
+getMessage	KEYWORD2
+sendMessage	KEYWORD2
+printMessage	KEYWORD2
+
+getEngineLoad	KEYWORD2
+getEngineCoolantTemp	KEYWORD2
+getFuelPressure	KEYWORD2
+getIntakeMAPressure	KEYWORD2
+getEngineRPM	KEYWORD2
+getVehicleSpeed	KEYWORD2
+getTimingAdvance	KEYWORD2
+getIntankeAirTemp	KEYWORD2
+getMAFairFlowRate	KEYWORD2
+getThrottlePosition	KEYWORD2
+getFuelLevel	KEYWORD2
+getBarometricPressure	KEYWORD2
+getEngineFuelRate	KEYWORD2
+CiARequest	KEYWORD2
+
+#############################################
+# Class (KEYWORD3)
+#############################################
+CAN	KEYWORD3
