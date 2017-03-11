@@ -1,0 +1,102 @@
+Telemetry Viewer File Format v0.1
+
+Grid Settings:
+
+	column count = 12
+	row count = 6
+
+Serial Port Settings:
+
+	port = COM4
+	baud = 9600
+	packet type = ASCII CSVs
+	sample rate = 100
+
+5 Data Structure Locations:
+
+	location = 0
+	processor index = 0
+	name = RPM
+	color = 0x000000
+	unit = rpm
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 1
+	processor index = 0
+	name = TPS
+	color = 0xFF0033
+	unit = %
+	conversion factor a = 1.0
+	conversion factor b = 0.5
+
+	location = 2
+	processor index = 0
+	name = OILTemperature
+	color = 0x0000CC
+	unit = C°
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 3
+	processor index = 0
+	name = OILPressure
+	color = 0x33FF00
+	unit = Bar
+	conversion factor a = 1.0
+	conversion factor b = 0.0625
+
+	location = 4
+	processor index = 0
+	name = Lambda
+	color = 0xFF00FF
+	unit = lambda
+	conversion factor a = 1.0
+	conversion factor b = 0.0078125
+
+5 Charts:
+
+	chart type = Time Domain Chart
+	duration = 100
+	top left x = 0
+	top left y = 0
+	bottom right x = 3
+	bottom right y = 2
+	datasets count = 1
+		dataset location = 0
+
+	chart type = Time Domain Chart
+	duration = 100
+	top left x = 4
+	top left y = 0
+	bottom right x = 7
+	bottom right y = 2
+	datasets count = 1
+		dataset location = 1
+
+	chart type = Time Domain Chart
+	duration = 100
+	top left x = 8
+	top left y = 0
+	bottom right x = 11
+	bottom right y = 2
+	datasets count = 1
+		dataset location = 4
+
+	chart type = Time Domain Chart
+	duration = 100
+	top left x = 0
+	top left y = 3
+	bottom right x = 5
+	bottom right y = 5
+	datasets count = 1
+		dataset location = 2
+
+	chart type = Time Domain Chart
+	duration = 100
+	top left x = 6
+	top left y = 3
+	bottom right x = 11
+	bottom right y = 5
+	datasets count = 1
+		dataset location = 3
